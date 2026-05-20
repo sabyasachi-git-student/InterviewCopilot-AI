@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35913.81 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterviewCopilot.Api", "InterviewCopilot.Api\InterviewCopilot.Api.csproj", "{8C8F287E-5832-483A-8B10-209A44A9792F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterviewCopilot.Api.Tests", "InterviewCopilot.Api.Tests\InterviewCopilot.Api.Tests.csproj", "{FF370691-036F-4145-ADA9-B95E675F0DF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C8F287E-5832-483A-8B10-209A44A9792F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C8F287E-5832-483A-8B10-209A44A9792F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C8F287E-5832-483A-8B10-209A44A9792F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C8F287E-5832-483A-8B10-209A44A9792F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF370691-036F-4145-ADA9-B95E675F0DF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF370691-036F-4145-ADA9-B95E675F0DF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF370691-036F-4145-ADA9-B95E675F0DF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF370691-036F-4145-ADA9-B95E675F0DF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6320A8B7-1244-4D61-AFD9-0F86C4DD5CCD}
+	EndGlobalSection
+EndGlobal
