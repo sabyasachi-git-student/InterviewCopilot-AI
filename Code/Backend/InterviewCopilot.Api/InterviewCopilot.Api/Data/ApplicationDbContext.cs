@@ -1,4 +1,5 @@
 ﻿using InterviewCopilot.Api.Models;
+using InterviewCopilotAPI.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace InterviewCopilot.Api.Data
@@ -11,5 +12,7 @@ namespace InterviewCopilot.Api.Data
         }
 
         public DbSet<Company> Companies { get; set; }
+
+        public DbSet<JobApplication> JobApplications { get; set; }
     }
 }

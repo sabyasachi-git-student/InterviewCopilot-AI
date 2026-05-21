@@ -22,21 +22,25 @@ namespace InterviewCopilot.Api
             });
 
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(
+                    builder.Configuration.GetConnectionString("DefaultConnection")));
 
+            // Repository registrations
             builder.Services.AddScoped<ICompanyRepository, CompanyRepository>();
+            builder.Services.AddScoped<IJobApplicationRepository, JobApplicationRepository>();
+
+            // Service registrations
             builder.Services.AddScoped<ICompanyService, CompanyService>();
+            builder.Services.AddScoped<IJobApplicationService, JobApplicationService>();
 
-            // Add services to the container.
-
+            // Add services to the container
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
+            // Configure the HTTP request pipeline
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -48,7 +52,6 @@ namespace InterviewCopilot.Api
             app.UseCors("AllowReactApp");
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 
